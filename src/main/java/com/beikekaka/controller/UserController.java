@@ -18,7 +18,7 @@ public class UserController {
     @RequestMapping("/showUser")
     public ModelAndView showUser(){
         ModelAndView mav = new ModelAndView("index");
-        User user = this.userService.selectUser(1);
+        User user = this.userService.selectUser(2);
         mav.addObject("user",user);
         return mav;
     }
